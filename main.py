@@ -4,6 +4,7 @@ Group:
 Makeeva Angelina
 Kareva Alena
 Osokina Anastasya
+cvcvc
 '''
 
 def  (x, y, a, b, angle, color):
