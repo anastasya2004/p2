@@ -85,3 +85,18 @@ def triangle (x, y, a, b, c):
     turtle.right(135)
     turtle.end_fill()
     turtle.forward(a)
+
+def main_pictures_leftAlena():
+
+
+
+    pass
+
+
+def main_pictures_centerNastya():
+
+
+    pass
+
+
+def main_pictures_right_Gelya
