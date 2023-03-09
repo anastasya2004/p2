@@ -3,6 +3,7 @@ Title
 Group:
 Makeeva Angelina
 Kareva Alena
+Osokina Anastasya
 '''
 
 def  (x, y, a, b, angle, color):
