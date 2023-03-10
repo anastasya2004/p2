@@ -7,14 +7,21 @@ Osokina Anastasya
 '''
 
 import turtle
-def square (x, y, a):
-    '''
+import random
+wn = turtle.Screen()
+wn.setup(800, 800, 0, 0)
+wn.bgcolor('black')
+t = turtle.Turtle()
+t.speed(0)
+t.hideturtle()
+'''def square (x, y, a):
+    
     Function, drawing square.
     :param x: upper left corner coordinate x
     :param y: upper left corner coordinate y
     :param a: side length of a square
     :return: None
-    '''
+    
     turtle.up()
     turtle.setposition(x, y)
     turtle.down()
@@ -32,17 +39,18 @@ def square (x, y, a):
     turtle.forward(a)
     turtle.right(90)
     turtle.end_fill()
+'''
 
+'''def parallelogram(x, y, a, c):
 
-def parallelogram(x, y, a, c):
-    '''
     Function, drawing parallelogram.
     :param x: upper left corner coordinate x
     :param y: upper left corner coordinate y
     :param a: long side of a parallelogram
     :param c: short side of a parallelogram
     :return: None
-    '''
+    
+    
     turtle.up()
     turtle.setposition(x, y)
     turtle.down()
@@ -59,10 +67,10 @@ def parallelogram(x, y, a, c):
     turtle.right(135)
     turtle.forward(c)
     turtle.end_fill()
+'''
 
+'''def triangle (x, y, a, b, c):
 
-def triangle (x, y, a, b, c):
-    '''
     Function, drawing triangle.
     :param x: right angle coordinate x
     :param y: right angle coordinate y
@@ -70,7 +78,7 @@ def triangle (x, y, a, b, c):
     :param b: hypotenuse of triangle
     :param c: color of triangle
     :return: None
-    '''
+    
     turtle.up()
     turtle.setposition(x, y)
     turtle.down()
@@ -85,18 +93,17 @@ def triangle (x, y, a, b, c):
     turtle.right(135)
     turtle.end_fill()
     turtle.forward(a)
+    '''
 
-def main_pictures_leftAlena():
+def main_pictures_Alena():
 
+
+
+
+'''def main_pictures_centerNastya():
 
 
     pass
 
 
-def main_pictures_centerNastya():
-
-
-    pass
-
-
-def main_pictures_right_Gelya
+def main_pictures_right_Gelya'''
