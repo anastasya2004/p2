@@ -96,6 +96,14 @@ t.hideturtle()
     '''
 
 def main_pictures_Alena():
+    def draw_star(size, color):
+        t.color(color)
+        t.begin_fill()
+        for _ in range(5):
+            t.forward(size)
+            t.right(144)
+        t.end_fill()
+
 
 
 
