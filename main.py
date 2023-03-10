@@ -119,6 +119,20 @@ def main_pictures_Alena():
     t.circle(110)
     t.end_fill()
 
+    t.penup()
+    t.goto(wn.window_width() / -2, wn.window_height() / -2)
+    t.pendown()
+    t.begin_fill()
+    t.color('gray')
+    t.forward(wn.window_width())
+    t.left(90)
+    t.forward(wn.window_height() / 4)
+    t.left(90)
+    t.forward(wn.window_width())
+    t.left(90)
+    t.forward(wn.window_height() / 4)
+    t.end_fill()
+
 
 
 
