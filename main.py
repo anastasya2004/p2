@@ -133,6 +133,33 @@ def main_pictures_Alena():
     t.forward(wn.window_height() / 4)
     t.end_fill()
 
+    t.color('light gray')
+    t.penup()
+    t.goto(160, -340)
+    t.pendown()
+    t.begin_fill()
+    t.circle(50)
+    t.end_fill()
+    t.penup()
+    t.goto(-330, -330)
+    t.pendown()
+    t.begin_fill()
+    t.circle(60)
+    t.end_fill()
+    t.penup()
+    t.goto(-100, -280)
+    t.pendown()
+    t.begin_fill()
+    t.circle(70)
+    t.end_fill()
+    t.penup()
+    t.goto(250, -280)
+    t.pendown()
+    t.begin_fill()
+    t.circle(70)
+    t.end_fill()
+
+
 
 
 
