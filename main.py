@@ -158,8 +158,8 @@ def main_pictures_Alena():
     t.begin_fill()
     t.circle(70)
     t.end_fill()
-
-
+main_pictures_Alena()
+turtle.done()
 
 
 
