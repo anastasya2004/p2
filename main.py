@@ -103,6 +103,16 @@ def main_pictures_Alena():
             t.forward(size)
             t.right(144)
         t.end_fill()
+    for i in range(100):
+          x = random.randint(-600, 600)
+          y = random.randint(-450, 450)
+          size = random.randint(5, 20)
+          color = random.choice(['white', 'yellow'])
+          t.penup()
+          t.goto(x, y)
+          t.pendown()
+          draw_star(size, color)
+
 
 
 
