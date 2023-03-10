@@ -112,6 +112,12 @@ def main_pictures_Alena():
           t.goto(x, y)
           t.pendown()
           draw_star(size, color)
+    t.penup()
+    t.goto(-100, 80)
+    t.color('orange')
+    t.begin_fill()
+    t.circle(110)
+    t.end_fill()
 
 
 
