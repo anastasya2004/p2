@@ -166,9 +166,17 @@ turtle.done()
 
 
 
-'''def main_pictures_center_Nastya():
+def main_pictures_Nastya():
+    t.penup()
+    t.goto(100, 10)
+    t.color('orange')
+    t.begin_fill()
+    t.circle(110)
+    t.end_fill()
 
-
+main_pictures_Nastya()
+turtle.done()
+'''
     pass
 
 
