@@ -360,9 +360,6 @@ def main_pictures_Nastya():
 
 main_pictures_Nastya()
 
-'''
-    pass'''
-
 
 def main_pictures_Gelya():
     turtle.left(-45)
