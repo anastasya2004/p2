@@ -15,19 +15,19 @@ t = turtle.Turtle()
 t.speed(0)
 t.hideturtle()
 
-
-def square (x, y, a):
+def square (x, y, a, d):
     ''' Function, drawing square.
     :param x: upper left corner coordinate x
     :param y: upper left corner coordinate y
     :param a: side length of a square
-    :return: None'''
+    :param d: color
+:return: None'''
     t.up()
     turtle.setposition(x, y)
     turtle.down()
     turtle.pensize(2)
-    turtle.pencolor ('white')
-    turtle.color('#ff7c00')
+    turtle.pencolor (d)
+    turtle.color(d)
     turtle.speed(100)
     turtle.begin_fill()
     turtle.forward(a)
@@ -39,6 +39,8 @@ def square (x, y, a):
     turtle.forward(a)
     turtle.right(90)
     turtle.end_fill()
+    turtle.up()
+
 
 def parallelogram(x, y, a, c, k, d):
     '''
@@ -92,88 +94,8 @@ def triangle (x, y, a, b, c):
     turtle.forward(b)
     turtle.right(135)
     turtle.end_fill()
-
-
-    '''def square (x, y, a):
-    
-    Function, drawing square.
-    :param x: upper left corner coordinate x
-    :param y: upper left corner coordinate y
-    :param a: side length of a square
-    :return: None
-    
     turtle.up()
-    turtle.setposition(x, y)
-    turtle.down()
-    turtle.pensize(2)
-    turtle.pencolor ('white')
-    turtle.color('#ff7c00')
-    turtle.speed(100)
-    turtle.begin_fill()
-    turtle.forward(a)
-    turtle.right(90)
-    turtle.forward(a)
-    turtle.right(90)
-    turtle.forward(a)
-    turtle.right(90)
-    turtle.forward(a)
-    turtle.right(90)
-    turtle.end_fill()
-'''
 
-'''def parallelogram(x, y, a, c):
-
-    Function, drawing parallelogram.
-    :param x: upper left corner coordinate x
-    :param y: upper left corner coordinate y
-    :param a: long side of a parallelogram
-    :param c: short side of a parallelogram
-    :return: None
-    
-    
-    turtle.up()
-    turtle.setposition(x, y)
-    turtle.down()
-    turtle.pensize(2)
-    turtle.pencolor ('white')
-    turtle.color('#8ecc23')
-    turtle.speed(100)
-    turtle.begin_fill()
-    turtle.forward(a)
-    turtle.right(135)
-    turtle.forward(c)
-    turtle.right(45)
-    turtle.forward(a)
-    turtle.right(135)
-    turtle.forward(c)
-    turtle.end_fill()
-'''
-
-'''def triangle (x, y, a, b, c):
-
-    Function, drawing triangle.
-    :param x: right angle coordinate x
-    :param y: right angle coordinate y
-    :param a: leg of a triangle
-    :param b: hypotenuse of triangle
-    :param c: color of triangle
-    :return: None
-    
-    turtle.up()
-    turtle.setposition(x, y)
-    turtle.down()
-    turtle.pensize(2)
-    turtle.pencolor ('white')
-    turtle.color(c)
-    turtle.speed(100)
-    turtle.begin_fill()
-    turtle.forward(a)
-    turtle.right(135)
-    turtle.forward(b)
-    turtle.right(135)
-    turtle.end_fill()
-    turtle.forward(a)
-    '''
 
 def main_pictures_Alena():
     def draw_star(size, color):
@@ -267,6 +189,8 @@ def main_pictures_Gelya():
     triangle(158, 66, 80, 60, 'red')
     turtle.left(45)
     triangle(160, 288, 120, 80, 'red')
+    t.pendown()
+
     t.penup()
     t.goto(150, 182)
     t.color('grey')
@@ -291,5 +215,17 @@ def main_pictures_Gelya():
     t.begin_fill()
     t.circle(23)
     t.end_fill()
+
+    t.up()
+    turtle.left(-45)
+    square(-200, -200, 30, 'blue')
+    square(-160, -200, 30, 'blue')
+    square(-150, -120, 90, 'blue')
+    square(-185, -100, 20, 'blue')
+    square(-160, -30, 70, 'blue')
+    square(-130, -155, 20, 'blue')
+    square(-240, -155, 20, 'blue')
+    square(-175, -50, 10, 'white')
+    square(-205, -50, 10, 'white')
 main_pictures_Gelya()
 turtle.done()
