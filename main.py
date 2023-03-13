@@ -14,20 +14,20 @@ wn.bgcolor('black')
 t = turtle.Turtle()
 t.speed(0)
 t.hideturtle()
-'''def square (x, y, a):
-    
-    Function, drawing square.
+
+def square (x, y, a, d):
+    ''' Function, drawing square.
     :param x: upper left corner coordinate x
     :param y: upper left corner coordinate y
     :param a: side length of a square
-    :return: None
-    
-    turtle.up()
+    :param d: color
+:return: None'''
+    t.up()
     turtle.setposition(x, y)
     turtle.down()
     turtle.pensize(2)
-    turtle.pencolor ('white')
-    turtle.color('#ff7c00')
+    turtle.pencolor (d)
+    turtle.color(d)
     turtle.speed(100)
     turtle.begin_fill()
     turtle.forward(a)
@@ -39,46 +39,48 @@ t.hideturtle()
     turtle.forward(a)
     turtle.right(90)
     turtle.end_fill()
-'''
+    turtle.up()
 
-'''def parallelogram(x, y, a, c):
 
+def parallelogram(x, y, a, c, k, d):
+    '''
     Function, drawing parallelogram.
     :param x: upper left corner coordinate x
     :param y: upper left corner coordinate y
     :param a: long side of a parallelogram
     :param c: short side of a parallelogram
-    :return: None
-    
-    
+    :param k: angle of rotation
+    :param d: color
+    :return: None'''
+
+
     turtle.up()
     turtle.setposition(x, y)
     turtle.down()
     turtle.pensize(2)
-    turtle.pencolor ('white')
-    turtle.color('#8ecc23')
+    turtle.pencolor (d)
+    turtle.color(d)
     turtle.speed(100)
     turtle.begin_fill()
     turtle.forward(a)
-    turtle.right(135)
+    turtle.right(k)
     turtle.forward(c)
-    turtle.right(45)
+    turtle.right(180-k)
     turtle.forward(a)
-    turtle.right(135)
+    turtle.right(k)
     turtle.forward(c)
     turtle.end_fill()
-'''
 
-'''def triangle (x, y, a, b, c):
-
+def triangle (x, y, a, b, c):
+    '''
     Function, drawing triangle.
     :param x: right angle coordinate x
     :param y: right angle coordinate y
     :param a: leg of a triangle
     :param b: hypotenuse of triangle
     :param c: color of triangle
-    :return: None
-    
+    :return: None'''
+
     turtle.up()
     turtle.setposition(x, y)
     turtle.down()
@@ -92,8 +94,8 @@ t.hideturtle()
     turtle.forward(b)
     turtle.right(135)
     turtle.end_fill()
-    turtle.forward(a)
-    '''
+    turtle.up()
+
 
 def main_pictures_Alena():
     def draw_star(size, color):
@@ -357,9 +359,56 @@ def main_pictures_Nastya():
     t.forward(120)
 
 main_pictures_Nastya()
-turtle.done()
+
 '''
-    pass
+    pass'''
 
 
-def main_pictures_right_Gelya'''
+def main_pictures_Gelya():
+    turtle.left(-45)
+    parallelogram(140, 280, 150, 80, 90, 'red')
+    turtle.left(-45)
+    triangle(220, 200, 80, 60, 'red')
+    triangle(158, 66, 80, 60, 'red')
+    turtle.left(45)
+    triangle(160, 288, 120, 80, 'red')
+    t.pendown()
+
+    t.penup()
+    t.goto(150, 182)
+    t.color('grey')
+    t.begin_fill()
+    t.circle(27)
+    t.end_fill()
+    t.penup()
+    t.goto(106, 230)
+    t.color('grey')
+    t.begin_fill()
+    t.circle(27)
+    t.end_fill()
+    t.penup()
+    t.goto(153, 183)
+    t.color('yellow')
+    t.begin_fill()
+    t.circle(23)
+    t.end_fill()
+    t.penup()
+    t.goto(109, 231)
+    t.color('yellow')
+    t.begin_fill()
+    t.circle(23)
+    t.end_fill()
+
+    t.up()
+    turtle.left(-45)
+    square(-200, -200, 30, 'blue')
+    square(-160, -200, 30, 'blue')
+    square(-150, -120, 90, 'blue')
+    square(-185, -100, 20, 'blue')
+    square(-160, -30, 70, 'blue')
+    square(-130, -155, 20, 'blue')
+    square(-240, -155, 20, 'blue')
+    square(-175, -50, 10, 'white')
+    square(-205, -50, 10, 'white')
+main_pictures_Gelya()
+turtle.done()
