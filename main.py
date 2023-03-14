@@ -1,7 +1,7 @@
 '''
 Title
 Group:
-Makeeva Angelina
+Makeeva Angelina 68%
 Kareva Alena
 Osokina Anastasya
 '''
