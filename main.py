@@ -3,7 +3,7 @@ Title
 Group:
 Makeeva Angelina 68%
 Kareva Alena
-Osokina Anastasya
+Osokina Anastasya  85%
 '''
 
 import turtle
